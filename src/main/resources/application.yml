@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybd
+    username: root
+    password: QweAsdZxc12345678
+  jpa:
+    hibernate.ddl-auto: create
+    generate-ddl: true
+    show-sql: true

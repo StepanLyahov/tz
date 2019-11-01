@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+    <p>Добавление пользователя в базу данных</p>
+    <div>
+        <form method="post">
+            <input type="text" name="name" placeholder="Имя" />
+            <input type="text" name="secondname" placeholder="Фамилия" />
+            <input type="text" name="email" placeholder="Адрес пользователя"/>
+            <button type="submit">Добавить</button>
+        </form>
+    </div>
+    <p>ID добавленного пользователя:</p>
+    <p th:text="${name}"/>
+    <a href="/all">Все пользователи</a> <br/>
+    <a href="/getUser">Получить пользователя</a> <br/>
+    <a href="/setUser">Изменить Пользователя</a> <br/>
+    <a href="/loadImage">Загрузить изображение</a> <br/>
+    <a href="/statistics">Статистика сервера</a> <br/>
+</body>
+</html>
